@@ -7876,6 +7876,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP4" library="SparkFun" deviceset="M02" device="PTH" value="nmi"/>
 <part name="JP5" library="SparkFun" deviceset="M02" device="PTH" value="hlt"/>
 <part name="JP6" library="SparkFun" deviceset="M02" device="PTH" value="bus"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -7895,13 +7896,14 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C1" gate="G$1" x="96.52" y="93.98"/>
 <instance part="C2" gate="G$1" x="101.6" y="93.98"/>
 <instance part="C3" gate="G$1" x="106.68" y="93.98"/>
-<instance part="C4" gate="G$1" x="111.76" y="93.98"/>
+<instance part="C4" gate="G$1" x="116.84" y="93.98"/>
 <instance part="IC1" gate="D" x="109.22" y="22.86" rot="R180"/>
 <instance part="IC1" gate="C" x="91.44" y="22.86" rot="R180"/>
 <instance part="JP3" gate="G$1" x="104.14" y="114.3" rot="R270"/>
 <instance part="JP4" gate="G$1" x="116.84" y="114.3" rot="R270"/>
 <instance part="JP5" gate="G$1" x="127" y="114.3" rot="R270"/>
 <instance part="JP6" gate="G$1" x="139.7" y="114.3" rot="R270"/>
+<instance part="C5" gate="G$1" x="111.76" y="93.98"/>
 </instances>
 <busses>
 <bus name="A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,D0,D1,D2,D3,D4,D5,D6,D7,GND,VCC,WR,RD,IORQ,MREQ,RESET,M1,CLK,WAIT,NMI,HALT,INT,BUSRQ,BUSAK">
@@ -8365,9 +8367,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="96.52" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="96.52" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 <junction x="101.6" y="96.52"/>
 <junction x="106.68" y="96.52"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<junction x="116.84" y="96.52"/>
+<wire x1="116.84" y1="96.52" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="D" pin="I0"/>
@@ -8413,9 +8418,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="88.9" x2="106.68" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <junction x="106.68" y="88.9"/>
 <junction x="101.6" y="88.9"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<junction x="116.84" y="88.9"/>
+<wire x1="116.84" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="9"/>

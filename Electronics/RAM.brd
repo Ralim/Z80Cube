@@ -153,6 +153,10 @@
 <hole x="2.54" y="2.54" drill="3"/>
 <text x="5.715" y="12.7" size="1.016" layer="1" rot="R90">Ben V. Brown</text>
 <text x="1.905" y="12.065" size="1.016" layer="1" rot="R90">RalimTek.com</text>
+<wire x1="49.8475" y1="49.8475" x2="49.8475" y2="0.3175" width="0.254" layer="22"/>
+<wire x1="49.8475" y1="0.3175" x2="0.3175" y2="0.3175" width="0.254" layer="22"/>
+<wire x1="0.3175" y1="0.3175" x2="0.3175" y2="49.8475" width="0.254" layer="22"/>
+<wire x1="0.3175" y1="49.8475" x2="49.8475" y2="49.8475" width="0.254" layer="22"/>
 </plain>
 <libraries>
 <library name="RalimTek">
@@ -1788,6 +1792,9 @@ design rules under a new name.</description>
 <element name="JP4" library="SparkFun" package="1X02" value="nmi" x="46.1690125" y="6.164015625" smashed="yes" rot="R45"/>
 <element name="JP5" library="SparkFun" package="1X02" value="hlt" x="1.641971875" y="41.274996875" smashed="yes" rot="R90"/>
 <element name="JP6" library="SparkFun" package="1X02" value="bus" x="48.337034375" y="41.1979625" smashed="yes" rot="R90"/>
+<element name="C5" library="rcl" package="C0805" value="" x="22.225" y="27.94" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="23.495" y="25.4" size="1.27" layer="28" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="A0">
@@ -2209,6 +2216,28 @@ design rules under a new name.</description>
 <wire x1="26.7716" y1="6.0325" x2="25.4" y2="6.0325" width="0.3048" layer="1"/>
 <wire x1="29.5275" y1="4.7625" x2="29.845" y2="5.08" width="0.3048" layer="16"/>
 <wire x1="29.845" y1="5.08" x2="29.845" y2="7.305" width="0.3048" layer="16"/>
+<polygon width="0.3048" layer="1">
+<vertex x="1.27" y="6.985"/>
+<vertex x="5.08" y="3.175"/>
+<vertex x="5.08" y="1.905"/>
+<vertex x="5.715" y="1.27"/>
+<vertex x="45.085" y="1.27"/>
+<vertex x="45.72" y="1.905"/>
+<vertex x="45.72" y="3.175"/>
+<vertex x="48.895" y="6.35"/>
+<vertex x="48.895" y="43.815"/>
+<vertex x="45.72" y="46.99"/>
+<vertex x="45.72" y="48.26"/>
+<vertex x="45.085" y="48.895"/>
+<vertex x="5.715" y="48.895"/>
+<vertex x="5.08" y="48.26"/>
+<vertex x="5.08" y="46.99"/>
+<vertex x="1.27" y="43.18"/>
+</polygon>
+<contactref element="C5" pad="1"/>
+<wire x1="23.175" y1="27.94" x2="24.13" y2="27.94" width="0.254" layer="16"/>
+<via x="24.13" y="27.94" extent="1-16" drill="0.6" shape="octagon"/>
+<wire x1="24.13" y1="27.94" x2="24.765" y2="27.94" width="0.254" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U$1" pad="14"/>
@@ -2264,6 +2293,7 @@ design rules under a new name.</description>
 <via x="47.3075" y="12.065" extent="1-16" drill="0.6" shape="octagon"/>
 <wire x1="47.3075" y1="12.065" x2="46.99" y2="12.065" width="0.3048" layer="16"/>
 <contactref element="JP2" pad="9"/>
+<contactref element="C5" pad="2"/>
 </signal>
 <signal name="WE">
 <contactref element="U$1" pad="27"/>

@@ -6204,6 +6204,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="TP10" library="SparkFun" deviceset="TEST-POINT" device="2"/>
 <part name="TP13" library="SparkFun" deviceset="TEST-POINT" device="2"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND6" library="SparkFun" deviceset="GND" device=""/>
+<part name="P+12" library="SparkFun" deviceset="VCC" device=""/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="TP12" library="SparkFun" deviceset="TEST-POINT" device="2"/>
 </parts>
 <sheets>
 <sheet>
@@ -6262,6 +6266,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="TP10" gate="G$1" x="101.6" y="-15.24"/>
 <instance part="TP13" gate="G$1" x="101.6" y="-17.78"/>
 <instance part="GND5" gate="1" x="142.24" y="-93.98"/>
+<instance part="GND6" gate="1" x="165.1" y="-20.32"/>
+<instance part="P+12" gate="1" x="165.1" y="-12.7" rot="R90"/>
+<instance part="C9" gate="G$1" x="165.1" y="0"/>
+<instance part="TP12" gate="G$1" x="137.16" y="-66.04" rot="R90"/>
 </instances>
 <busses>
 <bus name="A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,D0,D1,D2,D3,D4,D5,D6,D7,GND,VCC,WR,RD,IORQ,MREQ,RESET,M1,CLK,WAIT,NMI,HALT,INT,BUSRQ,BUSAK">
@@ -6683,6 +6691,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="30.48" y1="-33.02" x2="-7.62" y2="-33.02" width="0.1524" layer="91"/>
 <label x="17.78" y="-33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="VCC"/>
+<pinref part="P+12" gate="1" pin="VCC"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -6775,6 +6787,10 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="IC2" gate="A" pin="G"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="WR" class="0">
 <segment>
@@ -6785,6 +6801,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="U1" gate="1" pin="(T0)PD7"/>
 <wire x1="124.46" y1="15.24" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
+<label x="104.14" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RD" class="0">
@@ -6796,6 +6813,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="U1" gate="1" pin="(T1)PD6"/>
 <wire x1="124.46" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
+<label x="104.14" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IORQ" class="0">
@@ -6805,8 +6823,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="83.82" y="101.6" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="1" pin="(XCK1)PD5"/>
-<wire x1="124.46" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U1" gate="1" pin="(TXD1/INT3)PD3"/>
+<wire x1="124.46" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
+<label x="104.14" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MREQ" class="0">
@@ -6816,8 +6835,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="81.28" y="101.6" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="1" pin="(ICP1)PD4"/>
-<wire x1="124.46" y1="7.62" x2="101.6" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U1" gate="1" pin="(RXD1/INT2)PD2"/>
+<wire x1="101.6" y1="2.54" x2="124.46" y2="2.54" width="0.1524" layer="91"/>
+<label x="104.14" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -6827,8 +6847,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="78.74" y="99.06" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="1" pin="(TXD1/INT3)PD3"/>
-<wire x1="124.46" y1="5.08" x2="101.6" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="1" pin="(XCK1)PD5"/>
+<wire x1="124.46" y1="10.16" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
+<label x="104.14" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="M1" class="0">
@@ -7012,6 +7033,15 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="154.94" y1="-38.1" x2="157.48" y2="-38.1" width="0.1524" layer="91"/>
 <label x="157.48" y="-38.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="1" pin="RESET"/>
+<wire x1="30.48" y1="83.82" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
+<label x="15.24" y="83.82" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="2.54" x2="170.18" y2="2.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="TDO" class="0">
 <segment>
@@ -7059,6 +7089,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="IC2" gate="A" pin="1A"/>
 <wire x1="142.24" y1="-66.04" x2="137.16" y2="-66.04" width="0.1524" layer="91"/>
 <label x="134.62" y="-66.04" size="1.778" layer="95"/>
+<pinref part="TP12" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CLK2" class="0">
@@ -7200,6 +7231,12 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="U1" gate="1" pin="(OC3A/AIN1)PE3"/>
 <pinref part="TP13" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="JP9" gate="G$1" pin="DTR"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
