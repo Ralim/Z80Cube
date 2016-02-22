@@ -9,3 +9,13 @@ This bootloader for the z80 then allows the user to test memory and load + execu
 * Z80 CPU
 * 64K SRAM/ROM
 * Power and Programmer (Atmega 2560+flash storage to store the software)
+
+
+##ToDo:
+Basically everything
+* Build PCBs
+* Test PCBs
+* Write the code for the bootloader (Going to use Arduino to keep it easy for others)
+* Write arduino code for storing program packages
+* Write arduino code for monitoring the bus
+* write arduino code for single stepping operation

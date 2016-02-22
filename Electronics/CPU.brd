@@ -1919,7 +1919,7 @@ design rules under a new name.</description>
 <wire x1="39.0525" y1="35.8775" x2="34.29" y2="40.64" width="0.3048" layer="1"/>
 <wire x1="34.29" y1="40.64" x2="34.29" y2="47.625" width="0.3048" layer="1"/>
 </signal>
-<signal name="VCC">
+<signal name="VCC" airwireshidden="yes">
 <contactref element="JP2" pad="15"/>
 <contactref element="IC1" pad="11"/>
 <wire x1="23.8125" y1="33.02" x2="23.8125" y2="31.75" width="0.3048" layer="1"/>

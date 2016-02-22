@@ -6203,6 +6203,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="JP9" library="SparkFun-Connectors" deviceset="FTDI_DEVICE" device=""/>
 <part name="TP10" library="SparkFun" deviceset="TEST-POINT" device="2"/>
 <part name="TP13" library="SparkFun" deviceset="TEST-POINT" device="2"/>
+<part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6260,6 +6261,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="JP9" gate="G$1" x="170.18" y="-10.16"/>
 <instance part="TP10" gate="G$1" x="101.6" y="-15.24"/>
 <instance part="TP13" gate="G$1" x="101.6" y="-17.78"/>
+<instance part="GND5" gate="1" x="142.24" y="-93.98"/>
 </instances>
 <busses>
 <bus name="A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,D0,D1,D2,D3,D4,D5,D6,D7,GND,VCC,WR,RD,IORQ,MREQ,RESET,M1,CLK,WAIT,NMI,HALT,INT,BUSRQ,BUSAK">
@@ -6768,6 +6770,10 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="165.1" y1="88.9" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
 <junction x="160.02" y="88.9"/>
 <wire x1="160.02" y1="88.9" x2="154.94" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="A" pin="G"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="WR" class="0">
