@@ -152,12 +152,13 @@
 <hole x="47.625" y="47.625" drill="3"/>
 <hole x="47.625" y="2.54" drill="3"/>
 <hole x="2.54" y="2.54" drill="3"/>
-<text x="1.905" y="20.955" size="1.016" layer="1" rot="R90">Ben V. Brown</text>
-<text x="3.81" y="20.32" size="1.016" layer="1" rot="R90">RalimTek.com</text>
+<text x="1.905" y="19.685" size="1.016" layer="1" font="vector" rot="R90">Ben V. Brown</text>
+<text x="3.81" y="19.685" size="1.016" layer="1" font="vector" rot="R90">RalimTek.com</text>
 <wire x1="49.8475" y1="49.8475" x2="0.3175" y2="49.8475" width="0.254" layer="21"/>
 <wire x1="0.3175" y1="49.8475" x2="0.3175" y2="0.3175" width="0.254" layer="21"/>
 <wire x1="0.3175" y1="0.3175" x2="49.8475" y2="0.3175" width="0.254" layer="21"/>
 <wire x1="49.8475" y1="0.3175" x2="49.8475" y2="49.8475" width="0.254" layer="21"/>
+<text x="41.275" y="29.845" size="0.8128" layer="21" font="vector">Project: Zeta</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">

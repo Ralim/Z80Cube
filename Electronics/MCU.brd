@@ -181,6 +181,8 @@
 <wire x1="0.3175" y1="49.8475" x2="0.3175" y2="0.3175" width="0.254" layer="21"/>
 <wire x1="0.3175" y1="0.3175" x2="49.8475" y2="0.3175" width="0.254" layer="21"/>
 <wire x1="49.8475" y1="0.3175" x2="49.8475" y2="49.8475" width="0.254" layer="21"/>
+<text x="43.18" y="37.465" size="1.27" layer="22" font="vector" rot="MR0">Project: Zeta</text>
+<text x="41.91" y="31.75" size="0.8128" layer="21" font="vector" rot="R90">Ben V. Brown</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">

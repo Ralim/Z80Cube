@@ -151,12 +151,13 @@
 <hole x="47.625" y="47.625" drill="3"/>
 <hole x="47.625" y="2.54" drill="3"/>
 <hole x="2.54" y="2.54" drill="3"/>
-<text x="5.715" y="12.7" size="1.016" layer="1" rot="R90">Ben V. Brown</text>
-<text x="1.905" y="12.065" size="1.016" layer="1" rot="R90">RalimTek.com</text>
 <wire x1="49.8475" y1="49.8475" x2="49.8475" y2="0.3175" width="0.254" layer="22"/>
 <wire x1="49.8475" y1="0.3175" x2="0.3175" y2="0.3175" width="0.254" layer="22"/>
 <wire x1="0.3175" y1="0.3175" x2="0.3175" y2="49.8475" width="0.254" layer="22"/>
 <wire x1="0.3175" y1="49.8475" x2="49.8475" y2="49.8475" width="0.254" layer="22"/>
+<text x="2.54" y="26.035" size="1.27" layer="21" font="vector" rot="R90">Project: Zeta</text>
+<text x="2.54" y="11.43" size="1.27" layer="21" font="vector" rot="R90">Ben V. Brown</text>
+<text x="28.575" y="19.05" size="0.8128" layer="21" font="vector">Ralim@Ralimtek.com</text>
 </plain>
 <libraries>
 <library name="RalimTek">
