@@ -1,0 +1,8 @@
+Row {
+	CPU
+	DIO
+    }
+Row {
+	RAM
+	MCU
+    }
