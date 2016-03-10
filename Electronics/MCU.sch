@@ -6861,6 +6861,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="U1" gate="1" pin="(OC2A/PCINT4)PB4"/>
 <wire x1="101.6" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<label x="104.14" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -7208,6 +7209,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="U1" gate="1" pin="(TXD0)PE1"/>
 <wire x1="101.6" y1="-22.86" x2="104.14" y2="-22.86" width="0.1524" layer="91"/>
+<label x="116.84" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX2" class="0">
@@ -7219,6 +7221,7 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="U1" gate="1" pin="(RXD0/PCIN8)PE0"/>
 <wire x1="101.6" y1="-25.4" x2="104.14" y2="-25.4" width="0.1524" layer="91"/>
+<label x="116.84" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
