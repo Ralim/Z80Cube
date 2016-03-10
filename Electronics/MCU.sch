@@ -6181,7 +6181,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="P+10" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+11" library="SparkFun" deviceset="VCC" device=""/>
 <part name="J77" library="SparkFun" deviceset="M02" device="PTH" value="uart"/>
-<part name="UART1" library="SparkFun" deviceset="M02" device="PTH" value="i2c"/>
+<part name="J11" library="SparkFun" deviceset="M02" device="PTH" value="i2c"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805"/>
@@ -6243,7 +6243,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="P+10" gate="1" x="142.24" y="-73.66" rot="R90"/>
 <instance part="P+11" gate="1" x="142.24" y="-71.12" rot="R90"/>
 <instance part="J77" gate="G$1" x="22.86" y="-66.04"/>
-<instance part="UART1" gate="G$1" x="109.22" y="0" rot="R180"/>
+<instance part="J11" gate="G$1" x="119.38" y="0" rot="R180"/>
 <instance part="C1" gate="G$1" x="129.54" y="93.98"/>
 <instance part="C2" gate="G$1" x="134.62" y="93.98"/>
 <instance part="C3" gate="G$1" x="139.7" y="93.98"/>
@@ -7131,13 +7131,15 @@ Source: AVX .. aphvc.pdf</description>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="1" pin="(SDA/INT1)PD1"/>
-<pinref part="UART1" gate="G$1" pin="1"/>
+<pinref part="J11" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="1" pin="(SCL/INT0)PD0"/>
-<pinref part="UART1" gate="G$1" pin="2"/>
+<pinref part="J11" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="-2.54" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">

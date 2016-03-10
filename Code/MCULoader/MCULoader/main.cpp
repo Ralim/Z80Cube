@@ -6,9 +6,11 @@
  */ 
 
 #include <avr/io.h>
-
+#include "AddressBus.h"
+AddressBus dataBus;
 void setup()
 {
+	
 }
 int main(void)
 {

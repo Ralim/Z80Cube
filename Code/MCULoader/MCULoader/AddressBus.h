@@ -8,7 +8,7 @@
 
 #ifndef __ADDRESSBUS_H__
 #define __ADDRESSBUS_H__
-
+#include <avr/io.h>
 
 class AddressBus
 {
@@ -21,6 +21,12 @@ private:
 public:
 	AddressBus();
 	~AddressBus();
+	void readBus(uint8_t* data,uint16_t* address);//Reads the current bus lines back
+	void takeOverBus();//tells the mcu to stop the z80 to take over
+	void writeBus(uint8_t data, uint16_t address,bool memory);
+	void singleStep();//makes the z80 perform a single step
+	void writeValue();
+	void readValue(uint8_t* data, uint16_t* address);
 protected:
 private:
 	AddressBus( const AddressBus &c );
